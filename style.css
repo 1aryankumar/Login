@@ -1,4 +1,4 @@
-/* Reset some default styles */
+
 body,
 html {
   margin: 0;
@@ -6,7 +6,7 @@ html {
   height: 100%;
 }
 
-/* Set background image and animation */
+
 body {
   background-image: url('gi.gif');
   background-size: cover;
@@ -14,7 +14,7 @@ body {
   animation: gifAnimation 10s infinite;
 }
 
-/* Keyframe animation */
+
 @keyframes gifAnimation {
   0%, 100% {
     opacity: 1;
@@ -24,7 +24,7 @@ body {
   }
 }
 
-/* Center content */
+
 .log {
   position: absolute;
   top: 50%;
@@ -46,7 +46,7 @@ body {
   font-size: 2rem;
 }
 
-/* Styling for the login form */
+
 .form {
   width: 100%;
   max-width: 300px; /* Set a maximum width for the form */
@@ -75,7 +75,6 @@ form button {
   cursor: pointer;
 }
 
-/* Style form button on hover */
 .form button:hover {
   background-color: #0056b3;
 }
