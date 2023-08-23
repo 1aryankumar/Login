@@ -1,4 +1,4 @@
-
+/* Reset some default styles */
 body,
 html {
   margin: 0;
@@ -6,7 +6,7 @@ html {
   height: 100%;
 }
 
-
+/* Set background image and animation */
 body {
   background-image: url('gi.gif');
   background-size: cover;
@@ -14,7 +14,7 @@ body {
   animation: gifAnimation 10s infinite;
 }
 
-
+/* Keyframe animation */
 @keyframes gifAnimation {
   0%, 100% {
     opacity: 1;
@@ -24,20 +24,21 @@ body {
   }
 }
 
-
-.log {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+/* Center content */
+.container {
+  position: relative;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.3); /* Transparent overlay color */
+  height: 100vh;
+}
+
+.log {
+  background-color: rgba(0, 0, 0, 0.6); /* Transparent overlay color */
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .log h1 {
@@ -46,14 +47,14 @@ body {
   font-size: 2rem;
 }
 
-
+/* Styling for the login form */
 .form {
   width: 100%;
   max-width: 300px; /* Set a maximum width for the form */
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: rgba(15, 1, 1, 0.8); /* Adjust background opacity */
+  box-shadow: 0 2px 4px rgba(242, 242, 242, 0.1);
+  background-color: #f4dfdf; /* Solid background color */
 }
 
 .form input[type="text"],
@@ -61,7 +62,7 @@ body {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #110101;
+  border: 1px solid #ffdfdf;
   border-radius: 4px;
 }
 
@@ -75,6 +76,7 @@ form button {
   cursor: pointer;
 }
 
+/* Style form button on hover */
 .form button:hover {
   background-color: #0056b3;
 }
